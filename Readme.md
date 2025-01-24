@@ -138,6 +138,39 @@ npm install
 
 ---
 
+## **Future Improvements**
+While DevTaskFlow validates core concepts, the following improvements will bridge gaps between the prototype and the original design goals:
+
+### **GitHub API Automation**
+- **Current:** Manual SHA input with regex validation.
+- **Goal:** Auto-link tasks to commits via GitHub API, enabling searchable commit lists and pull request integration.
+
+### **Enhanced Security**
+- **Current:** Basic GitHub OAuth with no encryption.
+- **Goal:** Implement AES-256 encryption for workspace states and JWT-based RBAC (Admin/Developer roles).
+
+### **Full Debugger State Capture**
+- **Current:** Saves open files only.
+- **Goal:** Serialize debugger variables, breakpoints, and terminal sessions for full context restoration.
+
+### **Scalability Improvements**
+- **Current:** SQLite and JSON files for single-user use.
+- **Goal:** Migrate to PostgreSQL (tasks) and Amazon S3 (workspace states) for multi-team scalability.
+
+### **Multi-IDE Support**
+- **Current:** VS Code-only integration.
+- **Goal:** Extend to JetBrains IDEs (IntelliJ/PyCharm) via REST APIs and IDE-specific plugins.
+
+### **AI-Driven Automation**
+- **Current:** No AI/ML components.
+- **Goal:** Predict task deadlines using commit history and prioritize tasks via GPT-4 integration.
+
+### **Enterprise Readiness**
+- **Current:** Minimal collaboration features.
+- **Goal:** Add SSO (SAML), audit logs, and compliance reporting for enterprise adoption.
+
+---
+
 ## **Project Structure**
 
 ### **Backend**
@@ -203,3 +236,21 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a pull request.
+
+---
+
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## **Acknowledgments**
+- [GitHub API](https://docs.github.com/en/rest) for commit integration.
+- [Socket.IO](https://socket.io/) for real-time updates.
+- [Material-UI](https://mui.com/) for UI components.
+- [VS Code API](https://code.visualstudio.com/api) for the extension.
+
+---
+
+## **Author**
+- **Tushar Kand** - [GitHub Profile](https://github.com/Blame11)  
