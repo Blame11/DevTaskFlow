@@ -141,10 +141,6 @@ npm install
 ## **Future Improvements**
 While DevTaskFlow validates core concepts, the following improvements will bridge gaps between the prototype and the original design goals:
 
-### **GitHub API Automation**
-- **Current:** Manual SHA input with regex validation.
-- **Goal:** Auto-link tasks to commits via GitHub API, enabling searchable commit lists and pull request integration.
-
 ### **Enhanced Security**
 - **Current:** Basic GitHub OAuth with no encryption.
 - **Goal:** Implement AES-256 encryption for workspace states and JWT-based RBAC (Admin/Developer roles).
